@@ -1,0 +1,41 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body{
+  background-color: bisque;
+}
+
+/* menu */
+
+.logo{
+  width: 7%;
+}
+
+.main{
+  margin: 1%;
+}
+
+.carro{
+  margin: 10%;
+}
+
+/* container */
+
+.foto{
+  width: 20%;
+  margin: auto;
+  padding: auto;
+}
+
+/* footer */
+
+.footer{
+  text-align: center;
+  padding: 5%;
+  font-weight: bolder;
+  display: block;
+}
