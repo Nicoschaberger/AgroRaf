@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Bandas Elevadoras De Norias",
+        "imagen": "../Img/banmar1.png",
+        "descripcion": "Correas elevadoras BAN MAR, construidas en capas de tejido de poliéster en trama de urdimbre recubierta e impregnada en PVC Negro de Alta calidad, resistente al desgarro y roces laterales. Mínimo estiramiento, Ignifuga y Antiestática, Alta resistencia a los Aceites, Alta resistencia a la Abrasión. Los modelos que tenemos son BM 150, BM 200, BM 300, BM 400",
+        "category": "Ban Mar",
+        "id": 1
+    },
+    {
+        "name": "Cangilones Para Norias Elevadoras Volonté",
+        "imagen": "../Img/volonte.png",
+        "descripcion": "Los cangilones de chapa estampada son utilizables para el transporte de cereales, alimentos balanceados, expellers, productos áridos, etc. Los mismos presentan máxima durabilidad y resistencia. Están construidos en una sola pieza, no producen chispas y son 100% resistentes a roturas y deformaciones.",
+        "category": "Volonte",
+        "id": 2
+    },
+    {
+        "name": "Barras Cardanicas",
+        "descripcion": "Sistema mecánico de suspensión que consiste en dos círculos concéntricos cuyos ejes forman ángulo recto, que permite mantener la orientación de un eje de rotación en el espacio aunque su soporte se mueva.",
+        "category": "Zanini",
+        "id": 3
+    },
+    {
+        "name": "Manguera De Fumigación Naranja - 300 Lbs",
+        "descripcion": "Manguera de PVC especialmente diseñada para la circulación de productos químicos, reforzada con un tejido compacto de Poliamida, el que lo hace muy resistente a muy altas prestaciones (300 LBS - 20 BAR).",
+        "category": "Ever Wear",
+        "id": 4
+    }
+]
