@@ -11,7 +11,7 @@ const ItemList = ({ datos }) => {
                     id={dat.id}
                     name={dat.name}
                     imagen={dat.imagen}
-                    category={dat.category}
+                    categoria={dat.categoria}
                     descripcion={dat.descripcion}
                 />
             })

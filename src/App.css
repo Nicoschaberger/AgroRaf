@@ -12,11 +12,12 @@
 /* menu */
 
 .logo{
-  width: 7%;
+  width: 15%;
 }
 
 .main{
-  margin: 1%;
+  margin-right: 40%; 
+  margin-top: 1%;
 }
 
 .carro{

@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
-import { Image, Box } from '@chakra-ui/react'
 import { useParams } from "react-router-dom"
 import data from '../Data.json'
 import ItemList from './ItemList'
+import Loading from './Loading'
 
 const ItemListContainer = () => {
+  const [loading, setLoading] = useState(true);
   const [datos, setDatos] = useState([]);
-  const { category } = useParams();
+  const { categoria } = useParams();
 
   const getDatos = () => {
     return new Promise((resolve, reject) => {
@@ -20,21 +21,22 @@ const ItemListContainer = () => {
   useEffect(()=>{
     getDatos()
     .then((res)=> {
-      if(category){
-        setDatos(res.filter((item)=>item.category === category))
+      if(categoria){
+        setDatos(res.filter((item)=>item.categoria === categoria))
       }else{
         setDatos(res)
       }
     })
-  },[category])
-  return (
-    <>
-      <Box className='foto'>
-        <Image src='../Img/logo.png' alt='foto ilustrativa' />
-      </Box>
+  },[categoria])
+  
+  if(loading) { 
+    return <Loading/>
+  }
 
+
+  return (
+    <>      
       <ItemList datos={datos}/>
-    
     </>
   )
 }
