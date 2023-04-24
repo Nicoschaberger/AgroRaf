@@ -27,19 +27,19 @@ const NavBar = () => {
           <MenuItem>Catalogo</MenuItem>
         </Link>
 
-        <Link to={`/category/${"BanMar"}`}>
+        <Link to={`/categoria/${"BanMar"}`}>
           <MenuItem>Ban Mar</MenuItem>
         </Link>
 
-        <Link to={`/category/${"Volonte"}`}>
+        <Link to={`/categoria/${"Volonte"}`}>
           <MenuItem>Volonte</MenuItem>
         </Link>
 
-        <Link to={`/category/${"Zanini"}`}>
+        <Link to={`/categoria/${"Zanini"}`}>
           <MenuItem>Zanini</MenuItem>
         </Link>
 
-        <Link to={`/category/${"EverWear"}`}>  
+        <Link to={`/categoria/${"EverWear"}`}>  
           <MenuItem>Ever Wear</MenuItem>
         </Link>
 

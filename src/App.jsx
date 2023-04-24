@@ -16,10 +16,10 @@ const App = () => {
       <NavBar/>
 
       <Routes>
-      <Route exact path="/" element={<Main/>}/>
-      <Route exact path="/catalogo" element={<ItemListContainer/>}/>
-      <Route exact path="/categoria/:categoria" element={<ItemListContainer/>} />
-      <Route exact path="/Item/:id" element={<ItemDetailContainer/>}/>
+      <Route path="/" element={<Main/>}/>
+      <Route path="/catalogo" element={<ItemListContainer/>}/>
+      <Route path="/categoria/:categoria" element={<ItemListContainer/>} />
+      <Route path="/Item/:id" element={<ItemDetailContainer/>}/>
       </Routes>
 
       <Footer/>
