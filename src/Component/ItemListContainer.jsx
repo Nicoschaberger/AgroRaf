@@ -13,7 +13,7 @@ const ItemListContainer = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         resolve(data);
-        setLoading(false);
+        setLoading();
       }, 2000);
     });
   };

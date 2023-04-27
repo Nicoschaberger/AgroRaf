@@ -1,25 +1,39 @@
-import { Link } from 'react-router-dom'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import { Link } from '@chakra-ui/react'
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { Card, ButtonGroup, CardBody, CardFooter, Stack, Heading, Divider, Image, Text, Button } from '@chakra-ui/react'
 
 const Item = ({ name, imagen, descripcion, categoria, id}) => {
   return (
-    <>
-    <div key={id}>
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={imagen} />
-      <Card.Body>
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>
-          {descripcion}
-        </Card.Text>
-        <Link to={`/Item/${id}`}>
-        <Button variant="primary">Comprar ahora!</Button>
-        </Link>
-      </Card.Body>
+  <>
+  <div key={id}>
+    <Card maxW='sm' className='card'>
+      <CardBody>
+        <Image
+      src={imagen}
+      alt='Imagen Ilustrativa'
+      borderRadius='lg'
+        />
+    <Stack mt='6' spacing='3' className='text' >
+      <Heading size='md'>{name}</Heading>
+      <Text>
+        {descripcion}
+      </Text>
+    </Stack>
+      </CardBody>
+  <Divider />
+      <CardFooter>
+        <ButtonGroup spacing='2' >          
+            <Button className='whatsapp'  variant='solid' colorScheme='blue' >
+              <Link href="https://wa.me/+543492418983?text=Hola quiero informacion sobre " target="_blank">
+                Quiero Info!
+              <ExternalLinkIcon mx='2px' />
+              </Link> 
+            </Button>          
+        </ButtonGroup>
+      </CardFooter>
     </Card>
-    </div>
-    </>
+  </div>
+  </>
   )
 }
 

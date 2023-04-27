@@ -5,7 +5,7 @@ const ItemList = ({ datos }) => {
   return (
     <>
         <Container>
-            {datos?.map((dat) => {
+            {datos?.map((dat) => (
                 <Item
                     key={dat.id}
                     id={dat.id}
@@ -14,12 +14,10 @@ const ItemList = ({ datos }) => {
                     categoria={dat.categoria}
                     descripcion={dat.descripcion}
                 />
-            })
+              ))
             }
 
-        </Container>
-
-    
+        </Container>    
     </>
   )
 }

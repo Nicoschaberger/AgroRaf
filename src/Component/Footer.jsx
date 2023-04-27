@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
         <h2>Todos los derechos reservados</h2>
         <h3>
-            <a href="https://www.instagram.com/agroraf/">Contacto</a>
+            <a href="https://www.instagram.com/agroraf/" target="_blank">Contacto</a>
         </h3>
     </div>
   )
