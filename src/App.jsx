@@ -6,6 +6,7 @@ import Footer from './Component/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './Component/Main';
 import ItemDetailContainer from "./Component/ItemDetailContainer";
+import Person from './Component/Person';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <Route path="/catalogo" element={<ItemListContainer/>}/>
       <Route path="/categoria/:categoria" element={<ItemListContainer/>} />
       <Route path="/Item/:id" element={<ItemDetailContainer/>}/>
+      <Route path='/Person' element={<Person/>}/>
       </Routes>
 
       <Footer/>

@@ -16,12 +16,8 @@
 }
 
 .main{
-  margin-right: 40%; 
-  margin-top: 1%;
-}
-
-.carro{
-  margin: 10%;
+  margin-right: 18%; 
+  margin-top: 0.3%;
 }
 
 /* container */
@@ -44,6 +40,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person{
+  text-align: center;
 }
 
 /* footer */

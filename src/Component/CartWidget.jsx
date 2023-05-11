@@ -1,15 +1,43 @@
-import { Button } from '@chakra-ui/react'
-import React from 'react'
-
+import { Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import React from "react";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbSeparator,
+} from "@chakra-ui/react";
 
 const CartWidget = () => {
   return (
-    <div>
-        <Button colorScheme='green' className='carro'>      
-            <span className="material-symbols-outlined"> shopping_cart</span>
-        </Button>
-    </div>
-  )
-}
+    <>
+      <Breadcrumb className="carro">
 
-export default CartWidget
+        <BreadcrumbItem >
+          <Button color='green'>
+          <Link to={"/Person"}>
+            ¿Quien soy?
+          </Link>
+          </Button>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <Button color='green'>
+          <Link to={"/catalogo"}>
+            Catalogo
+          </Link>
+          </Button>
+        </BreadcrumbItem>
+
+        <BreadcrumbItem>
+          <Button color='green'>
+            Contacto
+          </Button>
+        </BreadcrumbItem>
+
+      </Breadcrumb>
+    </>
+  );
+};
+
+export default CartWidget;

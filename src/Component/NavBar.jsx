@@ -18,14 +18,10 @@ const NavBar = () => {
     <Spacer />
     <Box  p='1'/>
     <Menu>
-      <MenuButton as={Button} colorScheme='green' className="main">
+      <MenuButton as={Button} color='green' className="main">
         Categorias
       </MenuButton>
       <MenuList>
-
-        <Link to={"/catalogo"}>
-          <MenuItem>Catalogo</MenuItem>
-        </Link>
 
         <Link to={`/categoria/${"BanMar"}`}>
           <MenuItem>Ban Mar</MenuItem>
