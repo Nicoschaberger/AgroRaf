@@ -31,7 +31,9 @@ const CartWidget = () => {
 
         <BreadcrumbItem>
           <Button color='green'>
-            Contacto
+            <Link to={"/Contact"}>
+            Horarios
+            </Link>
           </Button>
         </BreadcrumbItem>
 

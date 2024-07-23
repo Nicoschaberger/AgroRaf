@@ -2,9 +2,7 @@ import CartWidget from "./CartWidget"
 import { Button, ButtonGroup } from '@chakra-ui/react'
 import { Menu, MenuButton, MenuList, MenuItem, MenuItemOption, MenuGroup, MenuOptionGroup, MenuDivider, Flex, Box, Spacer } from '@chakra-ui/react'
 import { Link } from "react-router-dom"
-
-
-
+import 'animate.css';
 
 const NavBar = () => {
   return (
@@ -13,7 +11,7 @@ const NavBar = () => {
       <Flex>
     <Box />
     <Link to={"/"}>
-      <img className="logo" src="../Img/logo.png" alt="logo" />
+      <img className="animate__fadeInDownBig" src="../Img/logo.png" alt="logo" />
     </Link>
     <Spacer />
     <Box  p='1'/>

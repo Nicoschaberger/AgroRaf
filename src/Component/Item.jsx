@@ -24,7 +24,7 @@ const Item = ({ name, imagen, descripcion, categoria, id}) => {
       <CardFooter>
         <ButtonGroup spacing='2' >          
             <Button className='whatsapp'  variant='solid' colorScheme='blue' >
-              <Link href="https://wa.me/543492418983?text=Hola quiero informacion sobre " target="_blank">
+              <Link href="https://wa.me/543492604671" target="_blank">
                 Quiero Info!
               <ExternalLinkIcon mx='2px' />
               </Link> 

@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Main from './Component/Main';
 import ItemDetailContainer from "./Component/ItemDetailContainer";
 import Person from './Component/Person';
+import Contact from './Component/Contact';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
       <Route path="/categoria/:categoria" element={<ItemListContainer/>} />
       <Route path="/Item/:id" element={<ItemDetailContainer/>}/>
       <Route path='/Person' element={<Person/>}/>
+      <Route path='/Contact' element={<Contact/>}/>
       </Routes>
 
       <Footer/>
